@@ -1,0 +1,140 @@
+<html lang="en">
+<head>
+ 
+    <meta charset="utf-8">
+    <title>Universal Design</title>
+    <meta name="description" content="CSS only mobile first navigation">
+    
+
+ 
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+ 
+
+    <link rel="stylesheet" href="universalWebsite.css">
+ 
+  
+    <link rel="shortcut icon" href="img/favicon.ico">
+ 	<style>
+	@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+	</style>
+	
+	<style>
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&display=swap');
+</style>
+	
+	
+</head>
+	
+<body id="home">
+
+	
+	<header>
+         
+    <h1 class="logo">Universal Design</h1>
+     
+    
+		
+ 
+	</header>
+	
+	
+	<nav id="primary_nav">
+	
+     <h2 class = "visually-hidden">
+	  	Navigation
+	</h2>  
+    <ul>
+     
+        <li><a href="UD-home.html">Home</a></li>
+     
+        <li><a href="UD-practices.html">Best practices</a></li>
+     
+        <li><a href="UD-learn.html">Learn more</a></li>
+     
+      
+        <li class="top"><a href="#home">Skip to top</a></li>
+     
+    </ul>
+ 
+	</nav>
+	
+	<main>
+    <section>
+      <h2>How to achieve universal design</h2>
+	  
+      <p>The 7 principles of design can be applied to technology, features, products, the environment etc. I’m going to offer some tips on how to achieve universal design in web and mobile applications through proper use of screen readers, color, size, and structure. </p> 
+	 
+	  <h3>Screen readers</h3>
+	  <p>Features can be implemented within a website’s code that help provide accurate and helpful information for the blind or visually impaired. One example of this is alternative text or alt text. Alternative text briefly and accurately describes what is being shown in an image. The HTML syntax for alternative text is &lt;img alt="text"&gt;
+	  </p>
+	
+
+	  <p>The alt text for the image below would be:  &lt;img alt="closed macbook laptop on a sofa"&gt;</p>
+	  
+	
+	  <img src= "laptop.jpg" alt="closed macbook laptop on a sofa" style="margin-left: 25%; padding-top: 20px;padding-bottom: 40px; width:50%">
+	 
+	  <p>If you used a screen reader on this page, the alternative text for the image above would be read out loud. Adding input field labels also provides guidance for screen readers. In HTML, the &lt;label&gt element provides a short and clear description of what the form field is. A label is often used in conjunction with an &lt;label&gt element. The input element helps the user know what should be inputted. </p>
+
+	  <p>Syntax of a date input field:</p>
+	 	
+	  <p>&lt;label for="date">Date (dd-mm-yyyy)&lt;/label&gt;</p>
+	
+	  <p>&lt;input type="text" name="date" id="date" /&gt;</p>
+
+	  
+	  <h3>Color</h3>
+
+	  <p>When designing elements on a page, having good color contrast is very important because it ensures readability. Color blind users especially find it difficult to read text when there is insufficient color contrast. It’s best to avoid pairing dark text/elements with a dark background and light text/elements with a light background. Black text over a white background has the best readability.</p> 
+		
+	    <img src= "contrast.png" alt="examples of good and bad color contrast" style="margin-left: 15%; padding-top: 20px;padding-bottom: 40px; width:70%">	
+		
+	  <p>There are many tools available that can test your website's color contrast. Some examples are WebAIM WAVE Toolbar and Colour Contrast Analyser.</p>
+		
+	
+	
+		
+	  <h3>Size</h3>
+
+	  <p>Similar to color, choosing the correct font/icon/image size is very important for a website or app’s readability. Having text that is too small is very challenging for people with visual impairments. It’s generally agreed upon that 16pt should be the minimum font size. When writing code, it’s important to take into account resizable text.</p> 
+		<p>Web browsers allow users to zoom in or resize a page, and that might disrupt your content if your code interferes with the resized text. In HTML, it’s recommended to use “em” for your font size instead of “px” because everything remains relative to each other. </p>
+		
+		<p>Making sure your text adjusts accordingly to different screen sizes is another essential function. This can be done using media queries; they allow you to customize the way your web page is displayed on different devices.</p>
+		
+		
+		 <figure>
+	  <img src= "mediaQueries.png" alt="media queries for desktop, tablet and smartphone" style="margin-left: 15%; padding-top: 20px;padding-bottom: 10px; width:70%">	
+	  <figcaption>Media Queries - Author: Seobility - License: CC BY-SA 4.0</figcaption>
+	  </figure>
+
+	  <h3>Structure</h3>
+	  <p>It is important to use headings because they provide structure to your page. HTML has header tags. They range from  &lt;h1&gt; to &lt;h6&gt; and each heading level changes in font size. &lt;h1&gt; is the main heading and it’s found at the top of the page, &lt;h2&gt; is referred to as a subheading and &lt;h3&gt; is a sub sub heading.</p> 
+	  <p>Proper use of headers allow users to navigate through your page easily, find relevant information quicker and it’s also helpful when for someone who uses a screen reader. The WebAIM WAVE tool has an outline feature that shows you the heading structure of your page, letting you know if you’re missing anything. </p>
+		
+	  <figure>
+	  <img src= "headings.png" alt="heading structure on a page" style="margin-left: 15%; padding-top: 20px;padding-bottom: 10px; width:70%">	
+	  <figcaption>H1-H6 headings - Author: Seobility - License: CC BY-SA 4.0</figcaption>
+	  </figure>
+		
+	  <h4>Source</h4>
+	  <p class = "source"> <a href = "https://www.csun.edu/universal-design-center/web-accessibility-criteria-headings-and-titles" class = "sourceLink"> https://www.csun.edu/universal-design-center/web-accessibility-criteria-headings-and-titles</a></p>
+		
+		
+		
+		
+    </section>
+  </main>
+	
+	
+	<footer>
+   <div class = "styleFoot">
+  <p><a href="UD-home.html">Home</a>&nbsp;/&nbsp;<a href="UD-practices.html">Best practices</a>&nbsp;/&nbsp;<a href="UD-learn.html">Learn more</a></p>
+  
+  </div>	
+</footer>
+	
+ 
+     
+</body>
+</html>
